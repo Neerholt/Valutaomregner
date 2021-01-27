@@ -70,7 +70,7 @@ tr:nth-child(even) {
 .grid{
     margin-top: 15%;
     display: grid;
-    grid-template-columns: 1fr 525px 100px 525px 1fr;
+    grid-template-columns: 1fr 560px 100px 560px 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
     ". title title title ."
@@ -98,6 +98,7 @@ tr:nth-child(even) {
 
 .result{
     grid-area: result;
+    margin-left: 26px;
 }
 
 
@@ -115,6 +116,11 @@ tr:nth-child(even) {
     ". userInPut ."
     ". fromTo ."
     ". result .";
+    }
+
+    .result{
+        grid-area: result;
+        margin-left: 0px;
     }
 }
 
