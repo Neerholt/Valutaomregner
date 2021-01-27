@@ -2,42 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Valutaomregner</title>
 </head>
 <body>
-<br><br><br><br><br><br><br><br><br><br><br>
-<center>
-    <h1><strong>Valutaomregner</strong></h1>
-    <br><br><br>
 
-    <input class="gui" type="number" id="userin" name="userinput" placeholder="Enter amount">
+<div class="grid">
+    <div class="title"><p><strong>Currency converter</strong></p></div>
 
-    <select class="guiDrop" name="dropDownOne" id="dropDownOne">
-        <option value="" selected disabled hidden>Currency</option>
-    </select>
+    <div class="userInPut">
+        <input class="gui" type="number" id="userin" name="userinput" placeholder="Enter amount">
 
+        <select class="guiDrop" name="dropDownOne" id="dropDownOne">
+            <option value="" selected disabled hidden>Currency</option>
+        </select>
+    </div>
 
-    <label class="textnavn" for="dropDownTwo">From : To</label>
-    <select class="guiDrop" name="dropDownTwo" id="dropDownTwo">
-        <option value="" selected disabled hidden>Currency</option>
-    </select>
+    <div class="fromTo"><p><strong>&#x2194;</strong></p></div>
 
+    <div class="result">
+        <select class="guiDrop" name="dropDownTwo" id="dropDownTwo">
+            <option value="" selected disabled hidden>Currency</option>
+        </select>
+        <input class="gui" type="number" id="resultIn" name="result"  placeholder="Result" disabled>
+    </div>
+</div>
 
-    <input class="gui" type="number" id="resultIn" name="result"  placeholder="Result" disabled>
-
-
+<!--
     <h4>History</h4>
     <table>
         <tr>
             <th id="his">:)</th>
         </tr>
     </table>
+    -->
 
-</center>
 </body>
 <script src="js/apiDataBridge.js"></script>
 <script src="js/autoGenApiSelected.js"></script>
